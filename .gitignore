@@ -18,6 +18,24 @@ emailable-report.html
 # Exclude sensitive configuration files containing real tokens/passwords
 src/test/resources/config.properties
 
+# Security / Environment Variables (Additional safeguard)
+*.env
+*.pem
+
+# Surefire / Failsafe plugins (Maven runner outputs)
+/surefire-reports/
+
+# Extent Reports / Allure Reports (If added in the future)
+/test-output-report/
+/ExtentReports/
+/allure-results/
+/allure-report/
+
 # OS system files
 .DS_Store
 Thumbs.db
+
+# OS-generated files (Additional)
+*.tmp
+*.bak
+*.swp
