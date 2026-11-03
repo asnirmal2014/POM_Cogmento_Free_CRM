@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite1" verbose="2">
+	<test name="Test1">
+		<classes>
+			<class name="utility.BaseClass" />
+			<class name="testcases.Cogmento_TestCase" />
+			<!-- <class name="pages.LoginPage" /> -->
+			<!-- <class name="pages.HomePage" /> -->
+			<!-- <class name="pages.CalendarPage" /> -->
+		</classes>
+	</test>
+</suite> 
+
+<!-- Remove the classes for example 'pages.LoginPage' if they have no @Test methods or TestNG annotations to clean up logs. -->
+<!-- Nothing will break because PageFactory is creating those page objects inside your test method, not because TestNG instantiated the classes. --> 
