@@ -1,4 +1,4 @@
-package utility;
+package com.utility;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -148,4 +148,3 @@ public class BaseClass
         }
     }
 }
-

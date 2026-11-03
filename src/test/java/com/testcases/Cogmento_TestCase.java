@@ -1,15 +1,16 @@
-package testcases;
+package com.testcases;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
-import pages.CalendarPage;
-import pages.CampaignsPage;
-import pages.ContactsPage;
-import pages.DocumentsPage;
-import pages.FormsPage;
-import pages.HomePage;
-import pages.LoginPage;
-import utility.BaseClass;
+
+import com.pages.CalendarPage;
+import com.pages.CampaignsPage;
+import com.pages.ContactsPage;
+import com.pages.DocumentsPage;
+import com.pages.FormsPage;
+import com.pages.HomePage;
+import com.pages.LoginPage;
+import com.utility.BaseClass;
 
 public class Cogmento_TestCase extends BaseClass
 {
