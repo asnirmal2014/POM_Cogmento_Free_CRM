@@ -24,7 +24,9 @@ public class LoginPage
 	{
         this.driver = driver;
     
-		PageFactory.initElements(driver, this);  // initialize this page's elements
+		// LoginPage loginPage = PageFactory.initElements(driver, Login_Page.class); // initialize this page's elements
+		// [ OR ]
+		// PageFactory.initElements(driver, this);                                   // initialize this page's elements
     }
 	*/
     
