@@ -6,6 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+/*
+In Selenium, Page Files (more precisely, Page Object Model / Page Object Classes) are files where 
+you store the web elements and actions of a web page in a separate class, rather than 
+writing them directly inside your test scripts.
+*/
 public class HomePage 
 {
 	public WebDriver driver = null;
@@ -15,10 +20,11 @@ public class HomePage
 		this.driver = driver;
 	}
 	
-/*
+    /*
     Refer CLASS_NAME selector in Selenium document 	
     @FindBy(how = How.CLASS_NAME, using="//i[@class='calendar icon']") WebElement calIcon; 
-*/
+    */
+	
 	@FindBy(how = How.XPATH, using="//i[@class='calendar icon']") WebElement calIcon;
 	@FindBy(how = How.XPATH, using="//i[@class='users icon']") WebElement contactsicon;
 	// @FindBy(how = How.XPATH, using="//i[@aria-hidden='true' and @class='settings icon']") WebElement settingsiconbtn;
@@ -28,9 +34,7 @@ public class HomePage
 	@FindBy(how = How.XPATH, using="//div[@class='menu-item-wrapper']//span[normalize-space()='Documents']") WebElement documentsIcon;
 	@FindBy(how = How.XPATH, using="//div[@class='menu-item-wrapper']//span[normalize-space()='Forms']") WebElement formsIcon;
 	@FindBy(how = How.XPATH, using="//div[@class='menu-item-wrapper']//span[normalize-space()='Home']") WebElement homeIcon;
-
-	
-	
+		
 	public void clickOnCalendarIcon()
 	{
 		calIcon.click();

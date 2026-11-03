@@ -8,6 +8,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+/*
+In Selenium, Page Files (more precisely, Page Object Model / Page Object Classes) are files where 
+you store the web elements and actions of a web page in a separate class, rather than 
+writing them directly inside your test scripts.
+*/
 public class ContactsPage 
 {
 	public WebDriver driver = null;
@@ -43,7 +48,6 @@ public class ContactsPage
 	@FindBy(how=How.XPATH, using="//div[contains(text(),'Indian/Mahe')]") WebElement timezone_optionsselect;
 	// @FindBy(how=How.XPATH, using="//input[@name='fileField' and  @type='file']") WebElement img_file_upload;
 	@FindBy(how=How.XPATH, using="//input[@name='image']") WebElement img_file_upload;
-	
 	
 	public void first_name_sendKeys()
 	{
