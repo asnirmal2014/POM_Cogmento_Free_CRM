@@ -2,7 +2,6 @@ package com.testcases;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
-
 import com.pages.CalendarPage;
 import com.pages.CampaignsPage;
 import com.pages.ContactsPage;
@@ -167,7 +166,7 @@ public class Cogmento_TestCase extends BaseClass
 	   homePage.clickOnsettingsiconbtn(); // Settings Icon
 	   Thread.sleep(3000);
 	   
-	   homePage.clickOnpowericon();       // LogOut Button
+	   homePage.clickOnpowericon();       // Logout Button
 	   Thread.sleep(3000);
        
 	   /*
